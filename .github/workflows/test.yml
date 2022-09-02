@@ -1,0 +1,15 @@
+name: Test
+on:
+  workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  log-non-bmp-characters:
+    name: Log 𠮷野家
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log 𠮷野家
+        run: |
+          echo 𠮷野家
